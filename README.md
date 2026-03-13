@@ -9,7 +9,7 @@ This Project is designed to detect whether the reviews given to a certain produc
 To run this project, 
 
 ~~~
-streamlit run Deployment.py
+streamlit run app.py
 ~~~
 
 After running, a UI will be shown and then you will input a link to the product reviews page, a crawler will extract the reviews, then they will be cleaned, preprocessed and  finally classified by a classifier.
