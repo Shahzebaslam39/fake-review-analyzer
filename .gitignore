@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.ipynb
+.ipynb_checkpoints/
+Data/
+reviews.csv
+reviews1.csv
+reviews.json
+reviews.txt
+review.png
+*.log
+logo_b64.txt

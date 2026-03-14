@@ -31,7 +31,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 ways = [
-    ("🔍", "Check a Single Review", BLUE, "#EFF6FF", "#BFDBFE",
+    ("🕵️", "Check a Single Review", BLUE, "#EFF6FF", "#BFDBFE",
      [
          ("Go to <b>Check a Review</b> in the left menu.", ""),
          ("Copy any review from Amazon, Google, Trustpilot, or anywhere.", ""),
@@ -39,7 +39,7 @@ ways = [
          ("Click <b>Check This Review</b>.", ""),
          ("Read your result — Fake or Legitimate — with a confidence score.", ""),
      ]),
-    ("📂", "Check Many Reviews at Once", GREEN, "#F0FDF4", "#BBF7D0",
+    ("🗃️", "Check Many Reviews at Once", GREEN, "#F0FDF4", "#BBF7D0",
      [
          ("Go to <b>Upload &amp; Scan File</b> in the left menu.", ""),
          ("Prepare a CSV file (spreadsheet) with one column of reviews, OR a plain text file with one review per line.", ""),
@@ -145,7 +145,7 @@ st.markdown("""
 
 st.markdown("""
 <div class="foot">
-  <div class="foot-brand">🔍 Fake Review Detector</div>
+  <div class="foot-brand">🕵️ Fake Review Detector</div>
   <div style="font-size:.75rem;color:#64748B;font-weight:600">Made by Roll No: 23CS116</div>
   <div class="foot-copy">AI-powered · For informational use only · Results are predictions, not guarantees</div>
 </div>

@@ -63,7 +63,7 @@ else:
 
 st.markdown("""
 <div class="foot">
-  <div class="foot-brand">🔍 Fake Review Detector</div>
+  <div class="foot-brand">🕵️ Fake Review Detector</div>
   <div style="font-size:.75rem;color:#64748B;font-weight:600">Made by Roll No: 23CS116</div>
   <div class="foot-copy">History is only saved for this browser session and is not stored anywhere.</div>
 </div>

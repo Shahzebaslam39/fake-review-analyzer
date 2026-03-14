@@ -518,6 +518,21 @@ hr { border-color: var(--border) !important; margin: 1.5rem 0 !important; }
 }
 .foot-brand { font-size: .9rem; font-weight: 700; color: var(--blue); }
 .foot-copy  { font-size: .75rem; color: var(--gray); }
+button[data-testid="collapsedControl"] {
+  background: #1D4ED8 !important;
+  border-radius: 0 8px 8px 0 !important;
+  width: 28px !important;
+  height: 56px !important;
+  border: none !important;
+  box-shadow: 2px 0 8px rgba(0,0,0,.15) !important;
+}
+button[data-testid="collapsedControl"]:hover {
+  background: #2563EB !important;
+}
+button[data-testid="collapsedControl"] svg {
+  color: white !important;
+  fill: white !important;
+}
 </style>
 """
 

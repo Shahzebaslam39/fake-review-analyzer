@@ -64,7 +64,7 @@ st.markdown("""
   <div style="text-align:center;padding:1.5rem 2rem;
     background:rgba(255,255,255,.08);border-radius:12px;
     border:1px solid rgba(255,255,255,.15);min-width:180px">
-    <div style="font-size:3.5rem;margin-bottom:.5rem">🔍</div>
+    <div style="font-size:3.5rem;margin-bottom:.5rem">🕵️</div>
     <div style="font-size:.85rem;color:rgba(255,255,255,.7);font-weight:500">
       AI Review Checker
     </div>
@@ -85,7 +85,7 @@ st.markdown("""
 
 cols = st.columns(3)
 features = [
-    ("🔍", "Check a Single Review",
+    ("🕵️", "Check a Single Review",
      "Paste any review text and get an instant result. See whether it's likely fake or real, how confident we are, and what signals we found.",
      "#EFF6FF", "#1D4ED8", "#BFDBFE"),
     ("📂", "Upload a File of Reviews",
@@ -142,7 +142,7 @@ st.markdown("""
 # ── Footer ────────────────────────────────────────────────
 st.markdown("""
 <div class="foot">
-  <div class="foot-brand">🔍 Fake Review Detector</div>
+  <div class="foot-brand">🕵️ Fake Review Detector</div>
   <div style="font-size:.75rem;color:#64748B;font-weight:600">Made by Roll No: 23CS116</div>
   <div class="foot-copy">AI-powered · For informational use only · Results are model predictions, not guarantees</div>
 </div>
