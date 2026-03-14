@@ -161,7 +161,7 @@ if go:
   <div style="font-size:.875rem;color:#374151;line-height:1.7">{review}</div>
 </div>
 """, unsafe_allow_html=True)
-            st.rerun()
+            
 
 st.markdown("""
 <div class="foot">

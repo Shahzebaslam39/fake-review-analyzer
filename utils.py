@@ -184,29 +184,36 @@ def scatter(df):
     return fig
 
 def gauge(score):
+    score = max(0, min(100, int(score)))
     col = GREEN if score < 40 else (AMBER if score < 70 else RED)
     lbl = "Low Risk" if score < 40 else ("Medium Risk" if score < 70 else "High Risk")
     fig = go.Figure(go.Indicator(
         mode="gauge+number", value=score,
         gauge=dict(
-            axis=dict(range=[0, 100], tickcolor=GRAY,
-                      tick_font=dict(size=9, color=GRAY)),
+            axis=dict(range=[0, 100]),
             bar=dict(color=col, thickness=.25),
-            bgcolor=LGRAY, bordercolor=BORDER, borderwidth=1,
+            bgcolor=LGRAY,
+            bordercolor=BORDER,
+            borderwidth=1,
             steps=[
                 dict(range=[0,  40], color="#DCFCE7"),
                 dict(range=[40, 70], color="#FEF3C7"),
                 dict(range=[70,100], color="#FEE2E2"),
             ],
-            threshold=dict(line=dict(color=col, width=2),
-                           thickness=.7, value=score),
+            threshold=dict(
+                line=dict(color=col, width=2),
+                thickness=.7,
+                value=score
+            ),
         ),
-        number=dict(font=dict(size=28, family="Inter, sans-serif", color=col)),
-        title=dict(text=f"<b>{lbl}</b>",
-                   font=dict(size=12, color=GRAY)),
+        number=dict(font=dict(size=28, color=col)),
+        title=dict(text=f"<b>{lbl}</b>", font=dict(size=12, color=GRAY)),
     ))
-    fig.update_layout(paper_bgcolor=_bg, height=185,
-                      margin=dict(t=30, b=8, l=20, r=20))
+    fig.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)",
+        height=185,
+        margin=dict(t=30, b=8, l=20, r=20)
+    )
     return fig
 
 def bar_chart(labels, values, colors):
@@ -583,3 +590,11 @@ def sbar(label, val, max_val, color, disp=None):
   </div>
   <span class="sbar-val" style="color:{color}">{show}</span>
 </div>"""
+def footer():
+    st.markdown("""
+<div class="foot">
+  <div class="foot-brand">Review Analyzer</div>
+  <div style="font-size:.75rem;color:#64748B;font-weight:600">Made by Roll No: 23CS116</div>
+  <div class="foot-copy">AI predictions only — use as a guide alongside your own judgment.</div>
+</div>
+""", unsafe_allow_html=True)

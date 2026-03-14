@@ -182,7 +182,7 @@ if run and uploaded:
   <div>{badge(lbl_r, r['confidence_%'])}</div>
 </div>""", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
-        st.rerun()
+       
 
 st.markdown("""
 <div class="foot">
