@@ -533,6 +533,9 @@ button[data-testid="collapsedControl"] svg {
   color: white !important;
   fill: white !important;
 }
+[data-testid="stSidebarCollapseButton"] {
+  display: none !important;
+}
 </style>
 """
 
